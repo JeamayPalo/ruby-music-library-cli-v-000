@@ -82,6 +82,7 @@ class MusicLibraryController
         array.each do |song|
           if song[0] == artist.name
             puts "#{song[0]} - #{song[1]} - #{song[2]}"
+          else nil 
       end 
     end
 
