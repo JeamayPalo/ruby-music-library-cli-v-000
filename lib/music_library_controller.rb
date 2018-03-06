@@ -95,6 +95,11 @@ class MusicLibraryController
     end
 
     def play_song
+      puts "Which song number would you like to play?"
+      song_num = gets.chomp
+      playing_song = @sorted_songs[song_num.to_i - 1]
+      puts "Playing #{playing_song}"
+  end
     end
 
 end
