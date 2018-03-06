@@ -75,8 +75,7 @@ class MusicLibraryController
     def list_songs_by_artist
       puts "Please enter the name of an artist:"
         input = gets.strip
-        artist_input = gets.chomp
-        artist = Artist.find_by_name(artist_input)
+        artist = Artist.find_by_name(input)
         array.each do |song|
           if song[0] == artist.name
             puts "#{song[0]} - #{song[1]} - #{song[2]}"
