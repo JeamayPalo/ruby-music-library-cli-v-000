@@ -75,7 +75,7 @@ class MusicLibraryController
     end
 
     def list_songs_by_artist
-      array = @music.files.collect do |file|
+      array = @music.collect do |file|
         song = self.class.split_filename(file)
         binding.pry 
         end
