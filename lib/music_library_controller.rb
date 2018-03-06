@@ -43,7 +43,7 @@ class MusicLibraryController
     def list_songs
       counter = 1
       #binding.pry
-        sorted_songs = Song.all.sort_by do |song|
+        @sorted_songs = Song.all.sort_by do |song|
           song.name
         end
         sorted_songs.each do |song|
