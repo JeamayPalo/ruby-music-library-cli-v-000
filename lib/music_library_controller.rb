@@ -79,11 +79,10 @@ class MusicLibraryController
         input = gets.strip
         if artist = Artist.find_by_name(input)
           artist.songs.each do |song|
-            binding.pry 
-            puts ""
-          end 
+          binding.pry 
+          puts ""
         end 
-      end
+      end 
     end 
   
     def list_songs_by_genre
