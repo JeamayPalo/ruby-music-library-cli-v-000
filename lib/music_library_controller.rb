@@ -76,7 +76,9 @@ class MusicLibraryController
       puts "Please enter the name of an artist:"
         input = gets.strip
         if input = Artist 
-          prints artist 
+          prints Artist.all 
+        else nil 
+        end 
     end
 
     def list_songs_by_genre
