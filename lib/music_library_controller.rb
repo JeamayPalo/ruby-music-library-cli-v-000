@@ -80,7 +80,7 @@ class MusicLibraryController
         if artist = Artist.find_by_name(input)
           binding.pry 
           artist.songs.each do |song|
-            song.name == artist.name
+            song.name == artist.nam
             puts "#{song[0]} - #{song[1]} - #{song[2]}"
           end 
         end 
