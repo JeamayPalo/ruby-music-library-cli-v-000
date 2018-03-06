@@ -100,6 +100,7 @@ class MusicLibraryController
         song = Song.find_by_name(input)
           if song 
             puts "Playing #{song.name} by #{song.artist.name}"
+          else nil 
         end 
     end
     
