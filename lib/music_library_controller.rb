@@ -79,8 +79,8 @@ class MusicLibraryController
         input = gets.strip
         if artist = Artist.find_by_name(input)
           binding.pry 
-          array.each do |song|
-          if song[0] == artist.name
+          artist.songs.each do |song|
+            song.name == artist.name
             puts "#{song[0]} - #{song[1]} - #{song[2]}"
           end 
         end 
