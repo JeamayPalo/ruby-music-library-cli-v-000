@@ -78,6 +78,8 @@ class MusicLibraryController
       puts "Please enter the name of an artist:"
         input = gets.strip
         if artist = Artist.find_by_name(input)
+          
+        end 
         binding.pry 
         array.each do |song|
           if song[0] == artist.name
