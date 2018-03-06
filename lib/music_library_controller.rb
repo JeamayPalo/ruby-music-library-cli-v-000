@@ -76,9 +76,6 @@ class MusicLibraryController
 
     def list_songs_by_artist
       binding.pry 
-      array = @music.collect do |file|
-        song = self.class.split_filename(file)
-        end
       puts "Please enter the name of an artist:"
         input = gets.strip
         artist = Artist.find_by_name(input)
